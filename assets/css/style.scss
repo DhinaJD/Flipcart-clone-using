@@ -1,8 +1,44 @@
 /*# sourceMappingURL=style.css.map */
+@import "dependancy/variable";
 
-// body{
-//   background-color: grey;
-//   h1{
-//     color: red !important;
-//   }
-// }
+
+.navbar{
+  background-color: rgb(18, 81, 183);
+  max-height: 56px;
+
+  .navbar-brand{
+    img{
+      max-width: 70px;
+    }
+    h5{
+      font-family: $roboto;
+      font-size: 11px;
+      font-style: italic;
+      color: $white;
+      img{
+        width: 10px;
+        margin-left: 3px;
+      }
+    }
+  }
+  .search-box{
+    
+    & input{
+      font-size: 14px;
+      height: 36px;
+      width: 100%;
+      background-color: rgb(59, 59, 59);
+      color: $white;
+      outline: 0;
+      border: 0;
+      border-radius: 0;
+    }
+    button{
+      background-color: $black;
+      color: blue;
+      border-radius: 0;
+      border-right: 0;
+    }
+  }
+  
+}
